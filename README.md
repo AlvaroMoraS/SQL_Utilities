@@ -16,6 +16,12 @@
  - [Codificador Base64](https://github.com/AlvaroMoraS/SQL_Utilities/blob/main/encode_base64.sql): función SQL que codifica cualquier texto en Base64.
  
  	Ejemplo de uso: `SELECT Database.dbo.encode_base64('Hola Mundo!')`
-- [Decodificador Base64](https://github.com/AlvaroMoraS/SQL_Utilities/blob/main/encode_base64.sql): función SQL que decodifica cualquier texto que esté codificado en Base64.
+- [Decodificador Base64](https://github.com/AlvaroMoraS/SQL_Utilities/blob/main/decode_base64.sql): función SQL que decodifica cualquier texto que esté codificado en Base64.
 
   	Ejemplo de uso: `SELECT Database.dbo.decode_base64('SG9sYSBNdW5kbyE=')`
+
+
+## Limpiar email
+ - [Limpia Email](https://github.com/AlvaroMoraS/SQL_Utilities/blob/main/limpiaEmail.sql): función SQL que quita caracteres extraños dentro de un email. Además, reemplaza las vocales con tilde a vocales sin tilde.
+ 
+ 	Ejemplo de uso: `SELECT Database.dbo.limpiaEmail(' álvaro ^!.mora.sep@gmail .c om ')`
