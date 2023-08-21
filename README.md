@@ -34,3 +34,20 @@
  - [Segundos a formato mm:ss](https://github.com/AlvaroMoraS/SQL_Utilities/blob/main/secondsTo_MMSS_format.sql): función SQL que convierte un número entero en formato mm:ss.
  
  	Ejemplo de uso: `SELECT Operaciones.dbo.secondsTo_MMSS_format(65)`
+
+
+## ▶️Ejecuciones por día de la semana
+ - [Ejecución de transacciones distintas de acuerdo al día actual](https://github.com/AlvaroMoraS/SQL_Utilities/blob/main/sp_ejecucionXdia.sql): procedimiento almacenado (sp, por sus siglas en inglés) que permite ejecutar transacciones SQL distintas de acuerdo al día actual de la semana. Es decir, si hoy es lunes, ejecuta la transacción X; y si fuera martes, ejecuta la transacción Y.
+ 
+ 	Ejemplo de uso: `EXEC Operaciones.dbo.ejecucionXdia`
+
+
+ - [Ejecución de transacciones distintas de acuerdo a la fecha enviada como parámetro](https://github.com/AlvaroMoraS/SQL_Utilities/blob/main/sp_ejecucionXdiaParametrico.sql): procedimiento almacenado (sp) que permite ejecutar transacciones SQL distintas de acuerdo a la fecha enviada como parámetro.
+ 
+ 	Ejemplo de uso: 	`
+
+				DECLARE @fecha as date
+
+				SET @fecha = '2023-08-14'
+
+				EXEC Operaciones.dbo.ejecucionXdiaParametrico @fecha`
