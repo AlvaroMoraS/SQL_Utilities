@@ -51,3 +51,7 @@
 				SET @fecha = '2023-08-14'
 
 				EXEC Operaciones.dbo.ejecucionXdiaParametrico @fecha`
+
+
+## ▶️Eliminar registros duplicados
+ - [Eliminar registros duplicados utilizando ROW_NUMBER()](https://github.com/AlvaroMoraS/SQL_Utilities/blob/main/eliminarDuplicados.sql): ejemplo de eliminación de registros duplicados de una tabla SQL.
